@@ -12,8 +12,9 @@
 
 ## 🎯 Objectif Professionnel
 
-Diplômé d'une AEC en cybersécurité, je me spécialise en surveillance, triage d'alertes et réponse aux incidents avec **Microsoft Sentinel**, **Defender XDR** et **Splunk**, dans mes propres laboratoires SOC.  
-Je cherche un premier poste d'**analyste SOC** où mettre en pratique la détection, l'investigation et la réponse aux incidents au quotidien. 
+Diplômé d'une AEC en cybersécurité, je me spécialise présentement en surveillance, triage d'alertes et réponse aux incidents avec **Microsoft Sentinel** et **Defender XDR**  dans mes propres laboratoires SOC.    
+
+> Je cherche un premier poste d'**analyste SOC** où mettre en pratique la détection, l'investigation et la réponse aux incidents au quotidien. 
 
 
 ---
@@ -89,28 +90,9 @@ Linux • Windows • Active Directory • VMware • Docker • pfSense
 
 ## 📂 Projets
 
-#### **Analyse d'e-mails de Phishing**  - *Octobre 2025*
-[![Statut](https://img.shields.io/badge/Statut-Terminé-green)]()  
-👉 **[Documentation complète du projet](https://github.com/Michael-Lalancette/SOC-Phishing)**
-
-* Analyse forensique d'un e-mail de phishing :
-   * Analyse des en-têtes (sender IP, SPF/DKIM/DMARC, Received hops)  
-   * Vérification de réputation des domaines (VirusTotal, OTX, AbuseIPDB)  
-   * Extraction et décodage des liens malveillants  
-   * Analyse pièces jointes (hashing - SHA256/MD5)  
-   * Cartographie MITRE ATT&CK (TTPs)  
-   * Production d'un rapport d'IoCs et recommandations préventives  
-
-
-
-
----
-
-## 📂 Projets
-
 #### **Laboratoire SC-200 · Microsoft Defender XDR et Sentinel** - *Octobre 2026 - à venir*
 [![Statut](https://img.shields.io/badge/Statut-En%20cours-orange)]()  
-👉 **[Documentation complète du projet](https://github.com/Michael-Lalancette/SOC-SC200-Lab)** - *en construction*
+👉 **[Documentation complète du projet](https://github.com/Michael-Lalancette/SOC-Sentinel-XDR)** - *en construction*
 
 * Environnement SecOps complet, monté de zéro dans un seul tenant : Defender XDR, Defender for Endpoint, Microsoft Sentinel, Entra ID P2, Intune, VM Azure et VM locale.
    * Ingestion dans Sentinel via data connectors, AMA et DCR : Windows, Syslog, Entra ID, Azure Activity, threat intelligence
