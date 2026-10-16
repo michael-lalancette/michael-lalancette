@@ -1,151 +1,143 @@
-# 👨‍💻 Michaël Lalancette | Analyste en Cybersécurité
+# Michaël Lalancette
 
+**Analyste en cybersécurité · Gestion des identités et des accès (GIA/IAM) · Microsoft Entra ID**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profil-blue)](https://www.linkedin.com/in/michael-lalancette/)
-[![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:Michael.Lalancette@proton.me)
-
-> ⚠️ Projet Microsoft Sentinel & Defender XDR à venir prochainement!
-
-
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profil-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/michael-lalancette/)
+[![Courriel](https://img.shields.io/badge/Courriel-Contact-6D4AFF?style=flat-square&logo=protonmail&logoColor=white)](mailto:Michael.Lalancette@proton.me)
 
 ---
 
-## 🎯 Objectif Professionnel
+## Profil
 
-Diplômé d'une AEC en cybersécurité, je me spécialise présentement en surveillance, triage d'alertes et réponse aux incidents avec **Microsoft Sentinel** et **Defender XDR**  dans mes propres laboratoires SOC.    
+Diplômé d'une AEC en cybersécurité, je me spécialise en **gestion des identités et des accès (GIA/IAM)** dans l'écosystème Microsoft Entra : cycle de vie des comptes, authentification forte, accès conditionnel et gestion des accès privilégiés.
 
-> Je cherche un premier poste d'**analyste SOC** où mettre en pratique la détection, l'investigation et la réponse aux incidents au quotidien. 
+Ce choix découle de mes laboratoires en détection et en investigation d'incidents. Une constante revenait d'une analyse à l'autre : l'attaque finissait toujours par viser des comptes/identités (identifiants exfiltrés, mouvement latéral vers le contrôleur de domaine, faux Google Authenticator). Comprendre comment les attaquants compromettent les comptes, abusent des privilèges et maintiennent leur accès m'a naturellement mené vers la GIA.
 
+Je cherche un premier poste d'**analyste GIA** dans la grande région de Montréal.
 
 ---
 
-## 📜 Formations & Certifications
+## Certifications et formation
 
-* **AEC Cybersécurité : Protection et Défense** | *Collège Montmorency* | *2023-2024*
-* **SC-900 : Microsoft Security, Compliance, and Identity Fundamentals** | *Microsoft* | *Septembre 2026*
-* **TryHackMe : SOC Level 1** | *[TryHackMe](https://tryhackme.com/)* | *Octobre 2025*
+| Certification/formation | Organisme | Date |
+| --- | --- | --- |
+| SC-300 : Microsoft Identity and Access Administrator | Microsoft | En cours (novembre 2026) |
+| SC-900 : Microsoft Security, Compliance, and Identity Fundamentals | Microsoft | Septembre 2026 |
+| SOC Level 1 | TryHackMe | Octobre 2025 |
+| AEC Cybersécurité : Protection et Défense | Collège Montmorency | 2023-2024 |
 
-**En cours :**
-- **SC-200 : Microsoft Security Operations Analyst Associate** | *Microsoft* | *Octobre 2026*
+---
 
+## Compétences
 
+### Identités et accès
 
+- Microsoft Entra ID (P2) : utilisateurs, groupes, rôles et applications
+- RBAC : attribution de rôles Entra et Azure par profil, selon le principe du moindre privilège
+- Entra ID Protection : traitement des utilisateurs à risque (confirmer la compromission, réinitialiser le mot de passe, révoquer les sessions)
+- Identités managées pour l'automatisation (Logic Apps)
+- Active Directory : comptes, groupes et stratégies
+- **En développement (laboratoire GIA) :** accès conditionnel, MFA, PIM, revues d'accès, Microsoft Graph, identité hybride AD → Entra ID
 
-## 💼 Compétences
+### Détection et investigation
 
-### **Détection & surveillance**
-- SIEM : Microsoft Sentinel (Log Analytics, data connectors, AMA, DCR) et Splunk (Universal Forwarder, index)
-- XDR et EDR : Defender XDR, Defender for Endpoint (EDR, règles ASR)
-- Règles de détection en KQL (analytics rules scheduled et NRT, watchlists, custom detections) et en SPL
-- UEBA, anomalies et threat intelligence (indicateurs STIX, TI map)
-- Mapping MITRE ATT&CK et analyse de couverture
-- Déploiement de honeypots et d'infrastructures de détection
-
-### **Réponse aux incidents**
-- Triage d'alertes et priorisation par criticité
-- Investigation : attack story, entités, device timeline
-- Réponse sur l'appareil : live response, investigation package, isolement
-- Identités compromises : Entra ID Protection (confirmer le compromis, réinitialiser, révoquer les sessions)
-- Rapports d'incident : chronologie, IOCs, MITRE ATT&CK et recommandations
-
-### **Threat hunting & investigation**
-- Threat hunting en KQL (advanced hunting, hunting queries, bookmarks)
-- Analyse PCAP et reconstruction de sessions malveillantes (Wireshark)
+- Requêtes KQL et SPL, SIEM Splunk (Universal Forwarder, index, alertes)
 - Investigation de phishing : en-têtes SMTP, SPF/DKIM/DMARC, liens, pièces jointes, sandbox
-- Extraction et enrichissement d'IOCs
+- Analyse PCAP et reconstruction de sessions malveillantes (Wireshark)
+- Extraction et enrichissement d'IOC, cartographie MITRE ATT&CK
+- Rapports d'incident : chronologie, IOC et recommandations
 
-### **Gestion des vulnérabilités**
-- Inventaire, priorisation des CVE (CVSS, exploit disponible, exposition), demande de remédiation et vérification avec Defender Vulnerability Management
+### Cloud et infrastructure
 
-### **Identité, accès & automatisation**
-- Entra ID, Intune, RBAC (rôles Entra et Azure par profil SOC, selon le principe du moindre privilège)
-- Playbooks Logic Apps (managed identity) et automation rules
-- Scripting : Python, Bash, PowerShell
-
-### **Infrastructure**
-- Windows, Linux, Active Directory
 - Azure : VM, NSG, Azure Policy, Cost Management
+- Windows, Linux
 - Virtualisation et réseaux isolés (VMware), segmentation (pfSense), TCP/IP, DNS
+- Scripting : PowerShell, Python, Bash
 
 ---
 
-## 💡 Outils
+## Outils
 
-**SIEM, XDR & détection**  
-Microsoft Sentinel • Defender XDR • Defender for Endpoint • Splunk • Suricata • MITRE ATT&CK
-
-**Requêtes & scripts**  
-KQL • SPL • Python • Bash • PowerShell
-
-**Analyse & investigation**  
-Wireshark • CyberChef • VirusTotal • AbuseIPDB • Shodan
-
-**Identité, cloud & automatisation**  
-Entra ID • Intune • Azure • Logic Apps
-
-**Infrastructure & systèmes**  
-Linux • Windows • Active Directory • VMware • Docker • pfSense
+**Identité et accès** · Microsoft Entra ID · Entra ID Protection · Intune · Active Directory  
+**Cloud et automatisation** · Azure · Logic Apps  
+**Requêtes et scripts** · KQL · SPL · PowerShell · Python · Bash  
+**Analyse et investigation** · Splunk · Suricata · Wireshark · CyberChef · VirusTotal · AbuseIPDB · Shodan · MITRE ATT&CK  
+**Infrastructure** · Windows · Linux · VMware · Docker · pfSense
 
 ---
 
-## 📂 Projets
+## Projets
 
-#### **Laboratoire SC-200 · Microsoft Defender XDR et Sentinel** - *Octobre 2026 - à venir*
-[![Statut](https://img.shields.io/badge/Statut-En%20cours-orange)]()  
-👉 **[Documentation complète du projet](https://github.com/Michael-Lalancette/SOC-Sentinel-XDR)** - *en construction*
+### Gestion des identités et des accès
 
-* Environnement SecOps complet, monté de zéro dans un seul tenant : Defender XDR, Defender for Endpoint, Microsoft Sentinel, Entra ID P2, Intune, VM Azure et VM locale.
-   * Ingestion dans Sentinel via data connectors, AMA et DCR : Windows, Syslog, Entra ID, Azure Activity, threat intelligence
-   * Analytics rules KQL (scheduled, NRT, watchlist) et custom detection Defender XDR, testées contre des attaques simulées
-   * UEBA, anomalies en Flighting et threat intelligence (TI map)
-   * Playbook Logic Apps et automation rules pour automatiser le triage
-   * Investigation et réponse : attack story, device timeline, live response, isolement d'appareil, Identity Protection
-   * Threat hunting en KQL (advanced hunting, hunting queries)
-   * Gestion des vulnérabilités avec Defender Vulnerability Management
-   * Rôles Entra et Sentinel attribués par profil SOC, selon le principe du moindre privilège
-> Couverture des trois domaines de la SC-200 : gérer l'environnement SecOps, répondre aux incidents, faire du threat hunting.
+#### Laboratoire GIA · Microsoft Entra ID
 
----
+![Statut : en cours](https://img.shields.io/badge/Statut-En%20cours-orange?style=flat-square)
 
-#### **Analyse d'e-mails de phishing** - *Octobre 2025*
-[![Statut](https://img.shields.io/badge/Statut-Terminé-green)]()  
-👉 **[Documentation complète du projet](https://github.com/Michael-Lalancette/SOC-Phishing)**
+**Documentation :** [IAM-Entra-Lab](https://github.com/Michael-Lalancette/IAM-Entra-Lab) *(en construction)*
 
-* Investigation complète d'un e-mail de phishing menant à trois malwares (BitRAT, AsyncRAT, miner Monero) :
-   * Analyse des en-têtes (sender IP, SPF/DKIM/DMARC, Received hops) : spoofing confirmé
-   * Vérification de réputation des domaines et IP (VirusTotal, OTX, AbuseIPDB)
-   * Décodage d'un loader PowerShell avec CyberChef (sleep anti-sandbox)
-   * Analyse dynamique en sandbox et hashing des payloads (SHA256)
-   * Cartographie MITRE ATT&CK (TTPs)
-   * Rapport d'IOCs et recommandations, dont une politique DMARC `p=reject`
+Mise en place des processus de GIA d'une organisation fictive dans un tenant Microsoft Entra ID P2, en préparation à la SC-300.
 
----
+- Cycle de vie : création, modification et désactivation de comptes à partir d'un fichier « RH » (CSV) avec PowerShell et Microsoft Graph
+- Groupes dynamiques et attribution des accès par groupe
+- Accès conditionnel : MFA obligatoire, blocage de l'authentification héritée, tests en mode rapport seul
+- Authentification résistante à l'hameçonnage : clés d'accès (FIDO2) et Temporary Access Pass
+- PIM : rôles d'administration juste-à-temps avec approbation
+- Revues d'accès et packages d'accès
+- Identité hybride : synchronisation d'un Active Directory local vers Entra ID
+- Surveillance : requêtes KQL sur les journaux de connexion et d'audit d'Entra ID (ex. ajout à un rôle privilégié hors PIM)
 
-#### **Laboratoire SOC avec Splunk** - *Septembre 2025*
-[![Statut](https://img.shields.io/badge/Statut-Terminé-green)]()  
-👉 **[Documentation complète du projet](https://github.com/Michael-Lalancette/SOC-Splunk-Lab)**
+### Détection et investigation
 
-* Conception et déploiement d'un mini-SOC de 4 VM dans un réseau isolé :
-   * SIEM Splunk Enterprise et honeypot IIS avec leurres
-   * Collecte et indexation des logs Windows et IIS via Universal Forwarder
-   * Alerte SPL en temps réel (Triggered Alerts, e-mail via Mailtrap, CSV lookup)
-   * Dashboard Splunk pour suivre les accès au honeypot
-   * Simulation adversaire (reconnaissance → accès → exfiltration), timeline et mapping MITRE ATT&CK
-> Validation du pipeline SOC complet (collecte → détection → alerte → triage → visualisation)
+Projets à l'origine de ma spécialisation en GIA.
 
----
+#### Analyse d'e-mails de phishing · Octobre 2025
 
-#### **Analyse de PCAPs avec Wireshark** - *Septembre 2025*
-[![Statut](https://img.shields.io/badge/Statut-Terminé-green)]()  
-👉 **[Documentation complète du projet](https://github.com/Michael-Lalancette/PCAP-Investigation)**
+![Statut : terminé](https://img.shields.io/badge/Statut-Termin%C3%A9-green?style=flat-square)
 
-* Investigation de trois captures d'infections réelles (Qakbot, OriginLogger, faux Google Authenticator) avec une même méthode en cinq étapes :
-   * Identification de l'hôte infecté et de l'utilisateur (NBNS, SMB, Kerberos)
-   * Vecteur initial, malware (Export Objects, hashes) et trafic C2
-   * Exfiltration SMTP en clair et lateral movement SMB vers le domain controller
-   * Extraction des IOCs, mapping MITRE ATT&CK et rapports d'investigation
+**Documentation :** [SOC-Phishing](https://github.com/Michael-Lalancette/SOC-Phishing)
+
+Investigation complète d'un e-mail de phishing menant à trois malwares (BitRAT, AsyncRAT, mineur Monero).
+
+- Analyse des en-têtes (IP d'envoi, SPF/DKIM/DMARC, sauts Received) : usurpation confirmée
+- Réputation des domaines et des IP (VirusTotal, OTX, AbuseIPDB)
+- Décodage d'un loader PowerShell avec CyberChef (délai anti-sandbox)
+- Analyse dynamique en sandbox et hachage des charges utiles (SHA256)
+- Cartographie MITRE ATT&CK, rapport d'IOC et recommandations, dont une politique DMARC `p=reject`
+
+> **Leçon retenue :** l'usurpation a réussi faute d'une politique DMARC stricte. Authentifier l'expéditeur relève aussi de la gestion des identités, au même titre qu'authentifier l'utilisateur.
+
+#### Laboratoire SOC avec Splunk · Septembre 2025
+
+![Statut : terminé](https://img.shields.io/badge/Statut-Termin%C3%A9-green?style=flat-square)
+
+**Documentation :** [SOC-Splunk-Lab](https://github.com/Michael-Lalancette/SOC-Splunk-Lab)
+
+Conception et déploiement d'un mini-SOC de 4 VM dans un réseau isolé.
+
+- SIEM Splunk Enterprise et honeypot IIS avec leurres
+- Collecte et indexation des journaux Windows et IIS via Universal Forwarder
+- Alerte SPL en temps réel (Triggered Alerts, courriel via Mailtrap, CSV lookup)
+- Tableau de bord Splunk pour suivre les accès au honeypot
+- Simulation adverse (reconnaissance → accès → exfiltration), chronologie et cartographie MITRE ATT&CK
+
+> **Leçon retenue :** une détection efficace dépend d'abord de la qualité des journaux collectés et d'une bonne compréhension du comportement normal de l'environnement.
+
+#### Analyse de PCAPs avec Wireshark · Septembre 2025
+
+![Statut : terminé](https://img.shields.io/badge/Statut-Termin%C3%A9-green?style=flat-square)
+
+**Documentation :** [PCAP-Investigation](https://github.com/Michael-Lalancette/PCAP-Investigation)
+
+Investigation de trois captures d'infections réelles (Qakbot, OriginLogger, faux Google Authenticator) selon une même méthode en cinq étapes.
+
+- Identification de l'hôte infecté et de l'utilisateur (NBNS, SMB, Kerberos)
+- Vecteur initial, malware (Export Objects, hachages) et trafic C2
+- Exfiltration SMTP en clair et mouvement latéral SMB vers le contrôleur de domaine
+- Extraction des IOC, cartographie MITRE ATT&CK et rapports d'investigation
+
+> **Leçon retenue :** le trafic réseau permet souvent de reconstruire toute la chaîne d'attaque, du vecteur initial jusqu'aux comptes visés : identifiants volés, accès au contrôleur de domaine.
 
 ---
 
 *Dernière mise à jour : octobre 2026*
-
