@@ -1,6 +1,6 @@
 # Michaël Lalancette
 
-**Analyste en cybersécurité**
+## Analyste en cybersécurité
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profil-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/michael-lalancette/)
 [![Courriel](https://img.shields.io/badge/Courriel-Contact-6D4AFF?style=flat-square&logo=protonmail&logoColor=white)](mailto:Michael.Lalancette@proton.me)
