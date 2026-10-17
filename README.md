@@ -1,6 +1,6 @@
 # Michaël Lalancette
 
-## Analyste en cybersécurité
+Cybersécurité Microsoft | Gestion des identités et des accès (IAM)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profil-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/michael-lalancette/)
 [![Courriel](https://img.shields.io/badge/Courriel-Contact-6D4AFF?style=flat-square&logo=protonmail&logoColor=white)](mailto:Michael.Lalancette@proton.me)
@@ -9,11 +9,11 @@
 
 ## Profil
 
-Diplômé d'une AEC en cybersécurité, je me spécialise en **gestion des identités et des accès (GIA/IAM)** dans l'écosystème Microsoft Entra : cycle de vie des comptes, authentification forte, accès conditionnel et gestion des accès privilégiés.
+Diplômé d'une AEC en cybersécurité, j'oriente actuellement mon développement professionnel vers la gestion des identités et des accès (IAM) dans l'écosystème Microsoft Entra.
 
-Ce choix découle de mes laboratoires en détection et en investigation d'incidents. Une constante revenait d'une analyse à l'autre : l'attaque finissait toujours par viser des comptes/identités (identifiants exfiltrés, mouvement latéral vers le contrôleur de domaine, faux Google Authenticator). Comprendre comment les attaquants compromettent les comptes, abusent des privilèges et maintiennent leur accès m'a naturellement mené vers la GIA.
+Mes laboratoires en détection et en investigation d'incidents m'ont permis de constater qu'une grande partie des attaques visent ultimement les identités, leurs privilèges ou leurs accès. Comprendre comment les attaquants compromettent les comptes m'a naturellement amené à approfondir la gestion des identités et des accès.
 
-Je cherche un premier poste d'**analyste GIA** dans la grande région de Montréal.
+Je cherche un premier poste d'analyste GIA dans la grande région de Montréal.
 
 ---
 
@@ -76,6 +76,7 @@ Je cherche un premier poste d'**analyste GIA** dans la grande région de Montré
 
 Mise en place des processus de GIA d'une organisation fictive dans un tenant Microsoft Entra ID P2, en préparation à la SC-300.
 
+Prévu dans le laboratoire :  
 - Cycle de vie : création, modification et désactivation de comptes à partir d'un fichier « RH » (CSV) avec PowerShell et Microsoft Graph
 - Groupes dynamiques et attribution des accès par groupe
 - Accès conditionnel : MFA obligatoire, blocage de l'authentification héritée, tests en mode rapport seul
