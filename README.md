@@ -68,8 +68,6 @@ Je cherche un premier poste d'**analyste GIA** dans la grande région de Montré
 
 ## Projets
 
-### Gestion des identités et des accès
-
 #### Laboratoire GIA · Microsoft Entra ID
 
 ![Statut : en cours](https://img.shields.io/badge/Statut-En%20cours-orange?style=flat-square)
@@ -87,9 +85,25 @@ Mise en place des processus de GIA d'une organisation fictive dans un tenant Mic
 - Identité hybride : synchronisation d'un Active Directory local vers Entra ID
 - Surveillance : requêtes KQL sur les journaux de connexion et d'audit d'Entra ID (ex. ajout à un rôle privilégié hors PIM)
 
-### Détection et investigation
+---
 
-Projets à l'origine de ma spécialisation en GIA.
+#### SOC Lab · Microsoft Sentinel et Defender XDR · Octobre 2026
+
+![Statut : terminé](https://img.shields.io/badge/Statut-Termin%C3%A9-green?style=flat-square)
+
+**Documentation :** [SOC-Lab-Sentinel-Defender](https://github.com/michael-lalancette/soc-lab-sentinel-defender)
+
+Montage complet d'un laboratoire SecOps Microsoft dans un seul tenant, de l'ingestion des journaux jusqu'à la détection, l'automatisation, l'investigation et threat hunting.
+
+- Architecture de 3 VM (Windows 11 (VMware), Windows Server (AZ), Ubuntu 24.04 (AZ)) qui envoient leur télémétrie vers Sentinel et Defender XDR avec Azure Monitor Agent (AMA), des règles de collecte (DCR) et la Logs Ingestion API
+- Intégration de Defender for Endpoint, Entra ID P2 (Identity Protection) et Intune, avec un modèle de comptes par rôle selon le moindre privilège
+- 5 détections (scheduled, near-real time, liste de surveillance, personnalisée (*_CL*), TI/UEBA), chacune associée à une technique MITRE ATT&CK
+- Flux de gestion des incidents : règles d'automatisation, playbook Logic Apps qui ajoute des commentaires structurés, tags, triage, classification et actions de réponse
+- Requêtes KQL pour l'investigation et la hunt, et renseignement sur les menaces au format STIX
+
+> **Leçon retenue :** Ce lab m'a montré, pas seulement en théorie mais en pratique, que l'identité est au centre de la sécurité : la plupart des incidents investigués remontaient à un compte, à ses privilèges ou à ses connexions. C'est ce qui m'a amené à vraiment m'intéresser à la gestion des identités et des accès (GIA/IAM) avec Entra ID.
+
+---
 
 #### Analyse d'e-mails de phishing · Octobre 2025
 
@@ -107,6 +121,8 @@ Investigation complète d'un e-mail de phishing menant à trois malwares (BitRAT
 
 > **Leçon retenue :** l'usurpation a réussi faute d'une politique DMARC stricte. Authentifier l'expéditeur relève aussi de la gestion des identités, au même titre qu'authentifier l'utilisateur.
 
+---
+
 #### Laboratoire SOC avec Splunk · Septembre 2025
 
 ![Statut : terminé](https://img.shields.io/badge/Statut-Termin%C3%A9-green?style=flat-square)
@@ -122,6 +138,8 @@ Conception et déploiement d'un mini-SOC de 4 VM dans un réseau isolé.
 - Simulation adverse (reconnaissance → accès → exfiltration), chronologie et cartographie MITRE ATT&CK
 
 > **Leçon retenue :** une détection efficace dépend d'abord de la qualité des journaux collectés et d'une bonne compréhension du comportement normal de l'environnement.
+
+---
 
 #### Analyse de PCAPs avec Wireshark · Septembre 2025
 
