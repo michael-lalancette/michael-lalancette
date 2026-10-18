@@ -1,6 +1,6 @@
 # Michaël Lalancette
 
-Cybersécurité Microsoft | Gestion des identités et des accès (IAM)
+Cybersécurité Microsoft | Détection, Investigation & Gestion des identités
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profil-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/michael-lalancette/)
 [![Courriel](https://img.shields.io/badge/Courriel-Contact-6D4AFF?style=flat-square&logo=protonmail&logoColor=white)](mailto:Michael.Lalancette@proton.me)
@@ -58,11 +58,14 @@ Je cherche un premier poste d'analyste GIA dans la grande région de Montréal.
 
 ## Outils
 
-**Identité et accès** · Microsoft Entra ID · Entra ID Protection · Intune · Active Directory  
-**Cloud et automatisation** · Azure · Logic Apps  
-**Requêtes et scripts** · KQL · SPL · PowerShell · Python · Bash  
-**Analyse et investigation** · Splunk · Suricata · Wireshark · CyberChef · VirusTotal · AbuseIPDB · Shodan · MITRE ATT&CK  
-**Infrastructure** · Windows · Linux · VMware · Docker · pfSense
+| Domaine | Outils |
+| --- | --- |
+| **Identité et accès** | Microsoft Entra ID · Entra ID Protection · Intune · Active Directory |
+| **SIEM et XDR** | Microsoft Sentinel · Microsoft Defender XDR · Defender for Endpoint · Splunk Enterprise |
+| **Collecte et automatisation** | Log Analytics · Azure Monitor Agent (AMA) · Data Collection Rules (DCR) · Logs Ingestion API · Splunk Universal Forwarder · Logic Apps |
+| **Requêtes et scripts** | KQL · SPL · PowerShell · Python · Bash |
+| **Analyse et TI** | Wireshark · VirusTotal · MITRE ATT&CK · STIX |
+| **Infrastructure et systèmes** | Azure (VM, NSG, Azure Policy) · VMware · Windows 11 · Windows Server · Ubuntu 24.04 · IIS · Docker |
 
 ---
 
