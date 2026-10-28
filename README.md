@@ -13,7 +13,7 @@ Diplômé d'une AEC en cybersécurité, j'oriente actuellement mon développemen
 
 Mes laboratoires en détection et en investigation d'incidents m'ont permis de constater qu'une grande partie des attaques visent ultimement les identités, leurs privilèges ou leurs accès. Comprendre comment les attaquants compromettent les comptes m'a naturellement amené à approfondir la gestion des identités et des accès.
 
-Je cherche un premier poste d'analyste GIA dans la grande région de Montréal.
+Ouvert aux opportunités en GIA/IAM, en administration Entra ID et en sécurité Microsoft, dans la grande région de Montréal.
 
 ---
 
@@ -30,29 +30,36 @@ Je cherche un premier poste d'analyste GIA dans la grande région de Montréal.
 
 ## Compétences
 
-### Identités et accès
+### Sécurité des identités
 
-- Microsoft Entra ID (P2) : utilisateurs, groupes, rôles et applications
-- RBAC : attribution de rôles Entra et Azure par profil, selon le principe du moindre privilège
-- Entra ID Protection : traitement des utilisateurs à risque (confirmer la compromission, réinitialiser le mot de passe, révoquer les sessions)
-- Identités managées pour l'automatisation (Logic Apps)
-- Active Directory : comptes, groupes et stratégies
-- **En développement (laboratoire GIA) :** accès conditionnel, MFA, PIM, revues d'accès, Microsoft Graph, identité hybride AD → Entra ID
+- Microsoft Entra ID (P2) : users, groups, roles, enterprise applications, administrative units et custom roles
+- Identity Lifecycle : bulk operations (CSV), scripts Microsoft Graph PowerShell, dynamic groups et group-based licensing
+- Hybrid identity : synchronisation AD DS vers Entra ID avec Entra Connect (PHS, PTA, Seamless SSO)
+- Active Directory : users, groups et GPO
+- RBAC : rôles Entra et Azure attribués par profil, selon le principe de least privilege
+
+### Authentification et gouvernance
+
+- MFA, passkeys (FIDO2), Temporary Access Pass et SSPR
+- Conditional Access : baseline, risk-based CA, report-only et What If
+- Entra ID Protection : risky users (confirm compromised, reset password, revoke sessions)
+- PIM : rôles just-in-time avec approbation
+- Access reviews, access packages et entitlement management
 
 ### Détection et investigation
 
-- Requêtes KQL et SPL, SIEM Splunk (Universal Forwarder, index, alertes)
+- Microsoft Sentinel, Defender XDR, Defender for Endpoint, Splunk
+- KQL et SPL : analytics rules, hunting queries, sign-in et audit logs
 - Investigation de phishing : en-têtes SMTP, SPF/DKIM/DMARC, liens, pièces jointes, sandbox
-- Analyse PCAP et reconstruction de sessions malveillantes (Wireshark)
-- Extraction et enrichissement d'IOC, cartographie MITRE ATT&CK
-- Rapports d'incident : chronologie, IOC et recommandations
+- Analyse PCAP (Wireshark), extraction d'IOC et mapping MITRE ATT&CK
+- Rapports d'incident : timeline, IOC et recommandations
 
-### Cloud et infrastructure
+### Automatisation et infrastructure
 
-- Azure : VM, NSG, Azure Policy, Cost Management
-- Windows, Linux
-- Virtualisation et réseaux isolés (VMware), segmentation (pfSense), TCP/IP, DNS
-- Scripting : PowerShell, Python, Bash
+- PowerShell (Microsoft Graph), Python, Bash, Logic Apps et managed identities
+- Azure : VM, NSG, Azure Policy, Log Analytics
+- Intune, Windows LAPS, Windows 11, Windows Server, Linux
+- VMware, pfSense, TCP/IP, DNS
 
 ---
 
@@ -60,12 +67,12 @@ Je cherche un premier poste d'analyste GIA dans la grande région de Montréal.
 
 | Domaine | Outils |
 | --- | --- |
-| **Identité et accès** | Microsoft Entra ID · Entra ID Protection · Intune · Active Directory |
-| **SIEM et XDR** | Microsoft Sentinel · Microsoft Defender XDR · Defender for Endpoint · Splunk Enterprise |
+| **Identités et accès** | Microsoft Entra ID · Entra ID Protection · Entra Connect · Cloud Sync · Active Directory · Intune · Windows LAPS · Windows Hello for Business |
+| **SIEM et XDR** | Microsoft Sentinel · Microsoft Defender XDR · Defender for Endpoint · Splunk |
 | **Collecte et automatisation** | Log Analytics · Azure Monitor Agent (AMA) · Data Collection Rules (DCR) · Logs Ingestion API · Splunk Universal Forwarder · Logic Apps |
-| **Requêtes et scripts** | KQL · SPL · PowerShell · Python · Bash |
-| **Analyse et TI** | Wireshark · VirusTotal · MITRE ATT&CK · STIX |
-| **Infrastructure et systèmes** | Azure (VM, NSG, Azure Policy) · VMware · Windows 11 · Windows Server · Ubuntu 24.04 · IIS · Docker |
+| **Requêtes et scripts** | KQL · SPL · PowerShell (Microsoft Graph) · Python · Bash |
+| **Analyse et threat intelligence** | Wireshark · CyberChef · VirusTotal · MITRE ATT&CK · STIX |
+| **Infrastructure et systèmes** | Azure (VM, NSG, Azure Policy) · Microsoft 365 · VMware · Windows · Linux · Windows Server · IIS · Docker |
 
 ---
 
@@ -75,19 +82,27 @@ Je cherche un premier poste d'analyste GIA dans la grande région de Montréal.
 
 ![Statut : en cours](https://img.shields.io/badge/Statut-En%20cours-orange?style=flat-square)
 
-**Documentation :** [IAM-Entra-Lab](https://github.com/Michael-Lalancette/IAM-Entra-Lab) *(en construction)*
+**Documentation :** [IAM-Entra-Lab](https://github.com/Michael-Lalancette/IAM-Entra-Lab) *(en cours)*
 
-Mise en place des processus de GIA d'une organisation fictive dans un tenant Microsoft Entra ID P2, en préparation à la SC-300.
+Mise en place des processus de GIA d'une organisation fictive *(nimbusID)* dans un tenant Microsoft Entra ID P2, en préparation à la SC-300.
 
-Prévu dans le laboratoire :  
-- Cycle de vie : création, modification et désactivation de comptes à partir d'un fichier « RH » (CSV) avec PowerShell et Microsoft Graph
-- Groupes dynamiques et attribution des accès par groupe
-- Accès conditionnel : MFA obligatoire, blocage de l'authentification héritée, tests en mode rapport seul
-- Authentification résistante à l'hameçonnage : clés d'accès (FIDO2) et Temporary Access Pass
-- PIM : rôles d'administration juste-à-temps avec approbation
-- Revues d'accès et packages d'accès
-- Identité hybride : synchronisation d'un Active Directory local vers Entra ID
-- Surveillance : requêtes KQL sur les journaux de connexion et d'audit d'Entra ID (ex. ajout à un rôle privilégié hors PIM)
+**Réalisé**
+- Delegated administration : custom role et administrative units ; une restricted management AU bloque même un Global Administrator, vérifié dans les audit logs
+- Identity lifecycle : création de comptes en bloc (CSV) et par script Microsoft Graph PowerShell, dynamic groups et group-based licensing
+- External identities : invitations B2B avec email one-time passcode et cross-tenant synchronization vers un tenant partenaire (*Cirrius Partner*)
+- Hybrid identity : Entra Connect Sync (PHS, filtrage par OU, writeback), PTA, Seamless SSO, Cloud Sync et hybrid join
+- Authentication : passkeys (FIDO2), TAP, Windows Hello for Business, CBA, SSPR avec writeback vers AD et Password Protection on-premises
+- Conditional Access : baseline avec exclusion des emergency access, phishing-resistant MFA pour les admins, compliant device (Intune, Windows LAPS), named locations, report-only et What If, CAE et authentication context
+- Troubleshooting dans les sign-in et audit logs : appareil non conforme (53000), session révoquée (50133), compte désactivé (50057)
+
+
+**Prochaines étapes à documenter**
+- Risk-based Conditional Access avec ID Protection
+- Global Secure Access : accès à une app privée sans VPN
+- Applications : SAML SSO, Application Proxy et managed identities
+- Defender for Cloud Apps : session policy
+- Gouvernance : access packages, access reviews et PIM avec approbation
+- Monitoring : requêtes KQL et workbooks sur les sign-in et audit logs
 
 ---
 
@@ -162,4 +177,4 @@ Investigation de trois captures d'infections réelles (Qakbot, OriginLogger, fau
 
 ---
 
-*Dernière mise à jour : octobre 2026*
+*Dernière mise à jour : 28 octobre 2026*
